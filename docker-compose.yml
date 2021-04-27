@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+ # Portainer is a docker management interface
+  portainer:
+    image: portainer/portainer:latest
+    container_name: portainer
+    environment:
+      # Set timezone for logs
+      - TZ=Europe/Copenhagen
+    ports:
+      - 9000:9000
+    volumes:
+      - portainer-data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+
+  # Watchtower is a docker image updater
+  watchtower:
+    image: v2tec/watchtower:latest
+    container_name: watchtower
+    environment:
+      # Set timezone for logs
+      - TZ=Europe/Copenhagen
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  portainer-data:
+    driver: local

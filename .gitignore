@@ -1,0 +1,9 @@
+# Files to include from excluded folders
+!config/autoProcess.ini.sample
+
+# Files to exclude
+config/*.ini
+config/*.log
+portainer-data/
+radarr-data/
+sonarr-data/
