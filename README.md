@@ -1,2 +1,2 @@
-# docker-automated-media
- Automated Media Download Setup for Synology
+# docker-container-management
+Container management for Docker
