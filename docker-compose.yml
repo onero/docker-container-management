@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
  # Portainer is a docker management interface
@@ -22,6 +22,7 @@ services:
     environment:
       # Set timezone for logs
       - TZ=Europe/Copenhagen
+      - WATCHTOWER_POLL_INTERVAL=3600
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
