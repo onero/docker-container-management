@@ -8,7 +8,7 @@ In order to utilize this image, you only need to have the latest version of dock
 
 ## Usage
 
-1. Download the docker-compose file to the root of your Ionic project.
+1. Download the docker-compose file to the root of your project.
 2. Run the following command
 
 ```
