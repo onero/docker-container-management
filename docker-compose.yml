@@ -22,7 +22,7 @@ services:
       # Set timezone for logs
       - TZ=Europe/Copenhagen
       - WATCHTOWER_CLEANUP=true
-      - WATCHTOWER_SCHEDULE=0 4 * * * # Pull every night at 4 AM
+      - WATCHTOWER_SCHEDULE=0 0 4 * * * # Pull every night at 4 AM
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
