@@ -2,7 +2,7 @@ version: '3.7'
 services:
  # Portainer is a docker management interface
   portainer:
-    image: portainer/portainer:latest
+    image: portainer/portainer-ce:latest
     container_name: portainer
     environment:
       # Set timezone for logs
