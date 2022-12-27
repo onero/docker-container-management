@@ -3,7 +3,7 @@ services:
  # Portainer is a docker management interface
   portainer:
     image: portainer/portainer-ce:latest
-    container_name: portainer
+    container_name: Portainer
     environment:
       # Set timezone for logs
       - TZ=Europe/Copenhagen
@@ -17,7 +17,7 @@ services:
   # Watchtower is a docker image updater
   watchtower:
     image: containrrr/watchtower
-    container_name: watchtower
+    container_name: Watchtower
     environment:
       # Set timezone for logs
       - TZ=Europe/Copenhagen
